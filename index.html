@@ -5,14 +5,66 @@
   <meta charset="UTF-8" />
   <link rel="icon" type="image/svg+xml" href="/logo.svg" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
   <link rel="stylesheet" href="./src/style.css">
   <title>Calculator</title>
 </head>
 
 <body>
-  <h1 class="text-3xl font-bold underline">
-    Hello world!
-  </h1>
+  <main class="w-full min-h-screen bg-[#DAF0FF] grid place-items-center">
+    <div id="calculator" class="w-[375px] bg-gray-50 rounded-3xl shadow-2xl">
+      <div id="wrapper" class="p-10">
+        <div id="container" class="flex flex-col">
+          <div id="output" class="flex justify-end items-center flex-wrap py-20">
+            <p id="calculate" class="text-2xl text-gray-400 font-normal">
+              6000 <strong>/</strong>2 <strong>+</strong>3227<strong>*</strong>2
+            </p>
+            <p id="result" class="text-5xl font-medium">
+              =12,454
+            </p>
+          </div>
+          <div id="input" class="grid grid-cols-4 gap-3 bg-gray-50 rounded-3xl w-full h-full">
+            <!-- Hàng 1 -->
+            <button class="btn">e</button>
+            <button class="btn">μ</button>
+            <button class="btn">sin</button>
+            <button class="btn">deg</button>
+
+            <!-- Hàng 2 -->
+            <button class="btn text-gray-400 text-3xl">Ac</button>
+            <button class="btn text-gray-400"><i class="fa-solid fa-delete-left"></i></button>
+            <button class="btn bg-blue-200 text-blue-700">/</button>
+            <button class="btn bg-blue-200 text-blue-700">*</button>
+
+            <!-- Hàng 3 -->
+            <button class="btn">7</button>
+            <button class="btn">8</button>
+            <button class="btn">9</button>
+            <button class="btn bg-blue-200 text-blue-700">-</button>
+
+            <!-- Hàng 4 -->
+            <button class="btn">4</button>
+            <button class="btn">5</button>
+            <button class="btn">6</button>
+            <button class="btn bg-blue-200 text-blue-700">+</button>
+
+            <!-- Hàng 5 -->
+            <button class="btn">1</button>
+            <button class="btn">2</button>
+            <button class="btn">3</button>
+            <button class="btn bg-blue-500 text-white row-span-2 h-full shadow-2xl text-2xl">
+              =
+            </button>
+
+            <!-- Hàng 6 -->
+            <button class="btn col-span-2">0</button>
+            <button class="btn">.</button>
+
+          </div>
+        </div>
+      </div>
+    </div>
+  </main>
   <script type="module" src="/src/main.js"></script>
 </body>
 

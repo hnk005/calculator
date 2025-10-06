@@ -1,3 +1,15 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@layer components {
+  .btn {
+    @apply flex items-center justify-center h-14 rounded-2xl bg-white 
+           text-[#38B9FF] font-semibold text-lg
+           active:scale-90 transition;
+  }
+}
+
+strong {
+  color: #109dff;
+}
